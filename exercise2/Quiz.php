@@ -1,4 +1,10 @@
 <?php
+/*
+Quiz.php
+Author: Clare Meyer
+Lab: 04; Exercise: 02
+grades the Quiz.html questions and prints results
+ */
   error_reporting(E_all);
   ini_set("display_errors", 1);
 

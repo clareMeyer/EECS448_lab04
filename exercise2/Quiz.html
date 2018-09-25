@@ -1,14 +1,21 @@
+<!--
+Quiz.html
+Author: Clare Meyer
+Lab: 04; Exercise: 02
+html that has questions and radio buttons, questions submitted to Quiz.php
+-->
+
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href= "./exercise5/index.css" />
-    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href= "./Quiz.css" />
+    <title>Quiz</title>
   </head>
 
   <body>
     <h1>QUIZ!!!!!!!!!!!!!!!!</h1>
-
+    <!--creating in a form so easy to submit to php, the post is what submits to php-->
     <form action="Quiz.php" method="post">
-
+      <!--all the questions and possible answers-->
     <p class="question">Which class is this project for?</p>
     <!--answeris number 1-->
       <input type="radio" name="question1" value="EECS448">EECS448</br>
@@ -53,6 +60,7 @@
 
     <!--submit button-->
   </br>
+  <!--submit button sends to php to be graded-->
     <input type="submit" value="Submit Quiz">
   </form>
 
