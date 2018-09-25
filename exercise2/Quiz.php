@@ -8,15 +8,19 @@ grades the Quiz.html questions and prints results
   error_reporting(E_all);
   ini_set("display_errors", 1);
 
+  /*pulling answers to questions from Quiz.html*/
   $answer1 = $_POST["question1"];
   $answer2 = $_POST["question2"];
   $answer3 = $_POST["question3"];
   $answer4 = $_POST["question4"];
   $answer5 = $_POST["question5"];
 
+  /*count is the number of correct answers, wrong is the number of incorrect answers*/
   $count=0;
   $wrong=0;
 
+  /*grading the questions, takes in the answer and checks right*/
+  /*increments either count or wrong*/
   echo "Question 1: Which class is this project for?";
   if($answer1 == "EECS448"){
     $count++;
@@ -90,7 +94,7 @@ grades the Quiz.html questions and prints results
   echo "<br>";
 
 
-
+  /*displays total correct, incorrect, and percentage*/
   echo "Total Correct: " . $count . "<br>";
   echo "Total Incorrect: " . $wrong . "<br>";
   echo "Score (percent): " . ($count/5)*100 . "%" . "<br>";
