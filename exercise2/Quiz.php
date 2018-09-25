@@ -87,5 +87,5 @@
 
   echo "Total Correct: " . $count . "<br>";
   echo "Total Incorrect: " . $wrong . "<br>";
-  echo "Score (percent): " . $count/5 . "%" . "<br>";
+  echo "Score (percent): " . ($count/5)*100 . "%" . "<br>";
  ?>
