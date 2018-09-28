@@ -1,0 +1,22 @@
+/*
+Quiz.css
+Author: Clare Meyer
+Lab: 04; Exercise: 02
+styling for Quiz.html
+ */
+
+
+body {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2%;
+}
+
+p.question {
+  font-family: Palatino, serif;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+}
