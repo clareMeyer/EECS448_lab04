@@ -8,10 +8,56 @@ Lab: 04; Exercise: 03
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href= "./style.css" />
-    <title>Quiz</title>
+    <script type="text/javascript" src="formChecker.js"></script>
+    <title>Exotic Plant Store</title>
   </head>
 
   <body>
+    <!--table that formats entire page-->
+    <table class="products">
+      <tr id="signIn">
+        <td>
+          <p>Username must be email address</p>
+          <input id="username" type="text" placeholder="Username">
+          <input id="password" type="text" placeholder="Password"></br></br>
+        </td>
+      </tr>
+      <tr id="shipping">
+        <td colspan="3">
+          <form action="customerBackend.php" method="post">
+            <p>Choose Shipping Option:
+            <input class="input" type="radio" name="shipping" value="seven">Free 7 day
+            <input class="input" type="radio" name="shipping" value="overnight">$50.00 overnight
+            <input class="input" type="radio" name="shipping" value="three">$5.00 three day
+          </form>
+        </td>
+      </tr>
+      <tr class="pictures">
+        <td><img src="./flower1.jpg" alt="super rare flower"></td>
+        <td><img src="./flower2.jpg" alt="a tiny bit less rare flower"></td>
+        <td><img src="./flower3.jpg" alt="not really rare at all but still special flower"></td>
+      </tr>
+      <tr class="description">
+        <td><p class="flower">Super Rare Flower</p></td>
+        <td><p class="flower">A Tiny bit less rare of a flower</p></td>
+        <td><p class="flower">Flower that is not really rare at all but still special</p></td>
+      </tr>
+      <tr class="price">
+        <td><p class="price">$1,000,000.00</p></td>
+        <td><p class="price">$4,6320.05</p></td>
+        <td><p class="price">$0.05</p></td>
+      </tr>
+      <tr class="number">
+        <td><input class="buy" name="most" placeholder="Quantity"></td>
+        <td><input class="buy" name="middle" placeholder="Quantity"></td>
+        <td><input class="buy" name="least" placeholder="Quantity"></td>
+      </tr>
+      <tr class="done">
+        <td id="done" colspan="3"><input class="donebut" type="submit" placeholder="Submit">
+        <input class="donebut" type="reset" placeholder="Reset"></td>
+      </tr>
+
+    </table>
 
   </body>
 </html>
