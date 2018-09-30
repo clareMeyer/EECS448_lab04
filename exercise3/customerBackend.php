@@ -6,6 +6,8 @@ Author: Clare Meyer
 Lab: 04; Exercise: 03
 processes the purchase and prints reciept
  */
+
+ /*getting all the info the user inputted from customerFrontend.html*/
  $user = $_POST["username"];
  $pass = $_POST["password"];
 
@@ -14,6 +16,7 @@ processes the purchase and prints reciept
  $quantMiddle = $_POST["middle"];
  $quantLeast = $_POST["least"];
 
+ /*calculations for reciept*/
  $payMost = $quantMost * 1000000.00;
  $payMiddle = $quantMiddle * 46320.05;
  $payLeast = $quantLeast * 0.05;
@@ -21,6 +24,7 @@ processes the purchase and prints reciept
  $totalQuant = $quantMost + $quantMiddle + $quantLeast;
  $total = $shipping + $payMost + $payMiddle + $payLeast;
 
+ /*prints welcome, username and password*/
  echo "Welcome" . "</br>";
  echo "Username: " . $user . "</br>";
  echo "Password: " . $pass . "</br>";
@@ -28,6 +32,7 @@ processes the purchase and prints reciept
  echo "Reciept for payment: " . "</br>";
  echo "</br>";
 
+ /*formats populates and prints table with reciept information*/
  echo "<table border='1' class=php>
   <tr>
     <th class=php></td>

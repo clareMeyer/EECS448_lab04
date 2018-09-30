@@ -13,9 +13,15 @@ Lab: 04; Exercise: 03
   </head>
 
   <body>
+    <!--buttons to navigate through exercises and labs-->
+    <button class="menu" onclick="location.href='../../index.html'">Homepage</button>
+    <button class="menu" onclick="location.href='../exercise1/main.html'">Exercise 1</button>
+    <button class="menu" onclick="location.href='../exercise2/Quiz.html'">Exercise 2</button>
+
     <form action="customerBackend.php" method="post" id="shipping2">
     <!--table that formats entire page-->
     <table class="products">
+      <!--username and password-->
       <tr id="signIn">
         <td>
           <p>Username must be email address</p>
@@ -23,38 +29,40 @@ Lab: 04; Exercise: 03
           <input name="password" type="password" placeholder="Password" required></br></br>
         </td>
       </tr>
+      <!--shipping-->
       <tr id="shipping">
         <td colspan="3">
-
             <p>Choose Shipping Option:
             <input class="input" type="radio" name="shipping" value=0>Free 7 day
             <input class="input" type="radio" name="shipping" value=50>$50.00 overnight
             <input class="input" type="radio" name="shipping" value=5>$5.00 three day
-          <!--</form>-->
         </td>
       </tr>
+      <!--product pictures-->
       <tr class="pictures">
         <td><img src="./flower1.jpg" alt="super rare flower"></td>
         <td><img src="./flower2.jpg" alt="a tiny bit less rare flower"></td>
         <td><img src="./flower3.jpg" alt="not really rare at all but still special flower"></td>
       </tr>
+      <!--product descriptions-->
       <tr class="description">
         <td><p class="flower">Super Rare Flower</p></td>
         <td><p class="flower">A Tiny bit less rare of a flower</p></td>
         <td><p class="flower">Flower that is not really rare at all but still special</p></td>
       </tr>
+      <!--product prices-->
       <tr class="price">
         <td><p class="price">$1,000,000.00</p></td>
         <td><p class="price">$46,320.05</p></td>
         <td><p class="price">$0.05</p></td>
       </tr>
+      <!--how many buying-->
       <tr class="number">
-        <!--<form action="customerBackend.php" method="post" id="quants">-->
           <td><input class="buy" type="number" id="most" placeholder="Quantity" name="most" min='0' required></td>
           <td><input class="buy" type="number" id="middle" placeholder="Quantity" name="middle" min='0' required></td>
           <td><input class="buy" type="number" id="least" placeholder="Quantity" name="least" min='0' required></td>
-        <!--</form>-->
       </tr>
+      <!--submit and reset buttons-->
       <tr class="done">
         <td id="done" colspan="3">
           <input class="donebut" type="submit" id="sub" placeholder="SubmitME" onclick="validate()" value="Submit"></button>
