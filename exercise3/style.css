@@ -4,6 +4,22 @@ Author: Clare Meyer
 Lab: 04; Exercise: 03
 styling for customerFrontend.html
  */
+table.php {
+  border-color: red;
+  font-size: 25px;
+  border-radius: 10px;
+  border-width: 20px;
+  border-style: double;
+}
+
+th.php{
+  font-weight: bold;
+  background-color: #4286f4;
+}
+
+td.php{
+  background-color: #4286f4;
+}
 
 body {
   margin: 2%;
